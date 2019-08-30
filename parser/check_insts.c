@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   check_insts.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:40:57 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:41:52 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../includes/op.h"
 #include "../printf/printf.h"
@@ -6,6 +18,7 @@
 **  Check if the param has a valid type
 **  By comparing it to all possible type
 */
+
 int			check_param(t_token token, int t_arg, char **file)
 {
 	if ((t_arg & T_DIR) &&
@@ -29,6 +42,7 @@ int			check_param(t_token token, int t_arg, char **file)
 **  Check the cmd (instruction)
 **  Check the number of params and their validity
 */
+
 int			check_cmd(t_ast_inst *inst, t_op op_desc, char **file)
 {
 	int		i;
@@ -54,6 +68,7 @@ int			check_cmd(t_ast_inst *inst, t_op op_desc, char **file)
 **  In case label isn't at the right spot the following
 **  Instruction is executed (function due to a lack of line)
 */
+
 static int	print_aux(t_ast_inst *inst, char **file)
 {
 	print_local_error(file,
@@ -67,6 +82,7 @@ static int	print_aux(t_ast_inst *inst, char **file)
 **  Check if the label's position is valid
 **  And if the cmd(instruction) is valid as well
 */
+
 int			check_inst(t_ast_inst *inst, char **file)
 {
 	int		i;
@@ -92,7 +108,6 @@ int			check_inst(t_ast_inst *inst, char **file)
 					"error: unknow command");
 	return (1);
 }
-
 
 int			check_insts(t_ast_inst *inst, char **file)
 {

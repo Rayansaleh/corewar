@@ -1,8 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_dote_start.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:37:05 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:37:13 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 
 /*
 **  If we found a dote, check if its a name or a comment
 */
+
 t_token	get_dote_start(int *i_line, char **file, int *i_col)
 {
 	t_token	token;

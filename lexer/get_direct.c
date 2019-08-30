@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_direct.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:34:10 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:34:35 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../includes/op.h"
 
@@ -5,6 +17,7 @@
 **  Check if the found number is valid and if not
 **  print a corresponding message
 */
+
 void	check_direct_number(t_token *token, int i, t_file cfile)
 {
 	if (i == 1 && token->data[0] == '-')
@@ -27,6 +40,7 @@ void	check_direct_number(t_token *token, int i, t_file cfile)
 **  If we found a number we identify it as one
 **  then store it into a (char*)
 */
+
 t_token	get_direct_number(int *i_line, char **file, int *i_col)
 {
 	t_token	token;
@@ -54,6 +68,7 @@ t_token	get_direct_number(int *i_line, char **file, int *i_col)
 **  If we found a label, we identify it as one
 **  then store it in a (char*)
 */
+
 t_token	get_direct_label(int *i_line, char **file, int *i_col)
 {
 	t_token	token;
@@ -81,6 +96,7 @@ t_token	get_direct_label(int *i_line, char **file, int *i_col)
 **  If we found a direct valor, we check if its a label or a number
 **  and call the corresponding function
 */
+
 t_token	get_direct(int *i_line, char **file, int *i_col)
 {
 	t_token	token;

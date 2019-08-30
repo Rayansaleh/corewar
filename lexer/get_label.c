@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_label.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:37:31 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:37:45 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../includes/op.h"
 
@@ -5,6 +17,7 @@
 **  If we found a standard label neither direct or indirect
 **  we identify it and store it.
 */
+
 t_token	get_label(int *i_line, char **file, int *i_col)
 {
 	t_token	token;

@@ -1,8 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   tab_token.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:38:34 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:38:59 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 
 /*
 **  Called only once to initialize the tab which will contain all tokens
 */
+
 void	init_tab_token(t_tab_token *tab_token)
 {
 	tab_token->len = TAB_TOKEN_LEN_INIT;
@@ -13,6 +26,7 @@ void	init_tab_token(t_tab_token *tab_token)
 /*
 **  Add a single token in a tab (called by tab_token_multi_add)
 */
+
 void	tab_token_add(t_tab_token *tab_token, t_token tken)
 {
 	if (!tab_token->tokens)
@@ -30,6 +44,7 @@ void	tab_token_add(t_tab_token *tab_token, t_token tken)
 /*
 **  Add to a tab all tokens found on a line
 */
+
 void	tab_token_multi_add(t_tab_token *tab_token, t_token *ltken)
 {
 	int	i;

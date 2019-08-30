@@ -1,9 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   len_prog.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:51:00 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:51:13 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../includes/op.h"
 
 /*
 **  Check the len of params for a instruction
 */
+
 int			len_param(int enum_token, char *cmd)
 {
 	if (enum_token == TOKEN_INDIRECT_LABEL ||
@@ -17,6 +30,7 @@ int			len_param(int enum_token, char *cmd)
 /*
 **  Check the len of a instruction
 */
+
 int			inst_len(t_ast_inst *ast_inst)
 {
 	int		i;
@@ -39,6 +53,7 @@ int			inst_len(t_ast_inst *ast_inst)
 /*
 **  Check the len for the entire file
 */
+
 unsigned	prog_len(t_ast_inst *ast_inst)
 {
 	if (!ast_inst)

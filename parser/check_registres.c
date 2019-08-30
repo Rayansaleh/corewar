@@ -1,9 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   check_registres.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:42:08 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:42:14 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../includes/op.h"
 
 /*
 **  Check if register exists
 */
+
 int		is_register(char *label)
 {
 	int		reg_num;
@@ -22,6 +35,7 @@ int		is_register(char *label)
 /*
 **  Check if the register passed as a param is valid
 */
+
 int		check_registers(t_ast_inst *ast_inst, char **file)
 {
 	int		i;

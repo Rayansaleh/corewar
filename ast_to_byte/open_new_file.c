@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   open_new_file.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:51:25 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:51:30 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../printf/printf.h"
 #include <unistd.h>
@@ -7,6 +19,7 @@
 /*
 **  Open a new file and change its extension to .cor
 */
+
 int		open_new_file(char *file_name)
 {
 	int		fd;

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   cmd_input.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:28:48 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:31:25 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "includes/asm.h"
 #include "printf/printf.h"
 #include <fcntl.h>
@@ -5,7 +17,8 @@
 /*
 **  Check if the file is valid
 */
-static t_cmdl	check_erro_cmdl(int argc, char **argv, t_cmdl *cmdl)
+
+static	t_cmdl	check_erro_cmdl(int argc, char **argv, t_cmdl *cmdl)
 {
 	size_t	len;
 
@@ -17,8 +30,8 @@ static t_cmdl	check_erro_cmdl(int argc, char **argv, t_cmdl *cmdl)
 	}
 	len = ft_strlen(argv[0]);
 	if (len < 3 ||
-		argv[0][len - 1] != 's' ||
-		argv[0][len - 2] != '.')
+			argv[0][len - 1] != 's' ||
+			argv[0][len - 2] != '.')
 	{
 		ft_printf("file name must finish with .s and not be empty\n");
 		cmdl->er = 1;
@@ -31,6 +44,7 @@ static t_cmdl	check_erro_cmdl(int argc, char **argv, t_cmdl *cmdl)
 **  Store the fd of the file given as argument
 **  And store its name has well
 */
+
 t_cmdl			cmd_input(int argc, char **argv)
 {
 	t_cmdl	cmdl;

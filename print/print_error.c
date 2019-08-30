@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   print_error.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 01:11:14 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 01:11:17 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../printf/printf.h"
 
 int	asm_usage(void)
@@ -7,7 +19,7 @@ int	asm_usage(void)
 }
 
 int	print_local_error(char **files,
-						const int *i_col, const int *i_line, char *msg)
+		const int *i_col, const int *i_line, char *msg)
 {
 	int i;
 

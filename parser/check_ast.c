@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   check_ast.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:43:19 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:43:26 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../includes/op.h"
 #include "../printf/printf.h"
@@ -9,6 +21,7 @@
 **  Is the name valid
 **  If there is comments are they valid
 */
+
 int		check_ast(t_parser parser_res, char **file)
 {
 	if (!parser_res.ast_prog.prog_name ||

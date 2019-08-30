@@ -1,8 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   inst_add_params.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:42:26 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:42:36 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 
 /*
 **  Custom error in case something wrong
 */
+
 static void	print_and_set_error(t_ast_inst *ast_inst,
 				t_lexer lexer_res, int *i, char *msg)
 {
@@ -18,6 +31,7 @@ static void	print_and_set_error(t_ast_inst *ast_inst,
 **  Check if there isn't too much parameters
 **  If parameters are valid they are stored
 */
+
 void		inst_add_params(t_ast_inst *a, t_lexer l, int *i)
 {
 	if (l.tab_token.tokens[*i].enum_token != TOKEN_DIRECT_LABEL &&

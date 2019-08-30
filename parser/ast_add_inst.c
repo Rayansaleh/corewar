@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ast_add_inst.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:39:56 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:40:14 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 
 /*
@@ -5,6 +17,7 @@
 **  The rest of the instruction
 **  Will be check later in the program
 */
+
 void		inst_add_labels_dec(t_ast_inst *ast_inst, t_lexer lexer_res, int *i)
 {
 	while (lexer_res.tab_token.tokens[*i].enum_token == TOKEN_LABEL_DECLARATION
@@ -36,6 +49,7 @@ void		inst_add_labels_dec(t_ast_inst *ast_inst, t_lexer lexer_res, int *i)
 **  If it isn't we create a new link at the end of the list
 **  It the error to the parser result in order to know where it went wrong
 */
+
 void		add_inst_to_parser_res(t_parser *parser_res, t_ast_inst ast_inst)
 {
 	t_ast_inst	*current;
@@ -60,6 +74,7 @@ void		add_inst_to_parser_res(t_parser *parser_res, t_ast_inst ast_inst)
 **  If a label is spotted but hasn't been mark as a token
 **  It imply a error in the program
 */
+
 static int	ast_add_inst_check_error(t_parser *parser_res,
 		t_lexer lexer_res, int *i, t_ast_inst ast_inst)
 {
@@ -90,6 +105,7 @@ static int	ast_add_inst_check_error(t_parser *parser_res,
 /*
 **  Add a new instruction to check
 */
+
 void		ast_add_inst(t_parser *parser_res, t_lexer lexer_res, int *i)
 {
 	t_ast_inst	ast_inst;

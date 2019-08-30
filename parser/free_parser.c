@@ -1,9 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   free_parser.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:44:15 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:44:19 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 
 /*
 **  Free everything that has been store to parse
 **  In order to avoid leaks
 */
+
 void	free_ast_inst(t_ast_inst *ast_inst)
 {
 	int		i;

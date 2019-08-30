@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   write_insts.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:52:07 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:52:16 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../includes/op.h"
 #include <unistd.h>
@@ -5,6 +17,7 @@
 /*
 **  Write the parameters into a char so it can be identify
 */
+
 void		write_octet_param(int fd, t_ast_inst *ast_inst)
 {
 	int				i;
@@ -29,6 +42,7 @@ void		write_octet_param(int fd, t_ast_inst *ast_inst)
 /*
 **  Write the params in the new file in converted format
 */
+
 void		write_params(int fd, t_ast_inst *ast_inst, int dir_size_2, int pos)
 {
 	int i;
@@ -44,6 +58,7 @@ void		write_params(int fd, t_ast_inst *ast_inst, int dir_size_2, int pos)
 /*
 **  Write the instruction in the new file in converted format
 */
+
 void		write_inst(int fd, t_ast_inst *ast_inst, int pos)
 {
 	t_op op;

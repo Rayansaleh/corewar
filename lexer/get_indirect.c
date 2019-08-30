@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_indirect.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:34:44 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:35:01 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../includes/op.h"
 
@@ -5,6 +17,7 @@
 **  If we found a label, we identify it as one
 **  then store it in a (char*)
 */
+
 t_token	get_indirect_label(int *i_line, char **file, int *i_col)
 {
 	t_token	token;
@@ -32,6 +45,7 @@ t_token	get_indirect_label(int *i_line, char **file, int *i_col)
 **  Check if the found number is valid and if not
 **  print a corresponding message
 */
+
 void	check_indirect_number(t_token *token, int i, t_file cfile)
 {
 	if (i == 1 && token->data[0] == '-')
@@ -54,6 +68,7 @@ void	check_indirect_number(t_token *token, int i, t_file cfile)
 **  If we found a number we identify it as one
 **  then store it into a (char*)
 */
+
 t_token	get_indirect_number(int *i_line, char **file, int *i_col)
 {
 	t_token	token;

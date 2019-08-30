@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   lexer.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:37:52 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:38:23 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../includes/get_next_line.h"
 #include "../printf/printf.h"
@@ -5,6 +17,7 @@
 /*
 **  Used to read and store the file
 */
+
 void			feed_lexer_files(t_lexer *lexer_res, int fd)
 {
 	int		len_files;
@@ -38,6 +51,7 @@ void			feed_lexer_files(t_lexer *lexer_res, int fd)
 **  In case of error free the lexer to avoid leeks
 **  And mention that a occurred so the program stops
 */
+
 static t_lexer	free_error(t_lexer *lexer_res)
 {
 	free_lexer(*lexer_res);
@@ -48,6 +62,7 @@ static t_lexer	free_error(t_lexer *lexer_res)
 /*
 **  Print a message before freeing the lexer
 */
+
 static t_lexer	free_print(t_lexer *lexer_res)
 {
 	ft_printf("lexer: the program is empty\n");
@@ -61,6 +76,7 @@ static t_lexer	free_print(t_lexer *lexer_res)
 **  Mark tokens on each line
 **  Store those tokens
 */
+
 t_lexer			lexer(t_cmdl cmdl)
 {
 	t_lexer		lexer_res;

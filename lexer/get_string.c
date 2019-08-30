@@ -1,9 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_string.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:35:32 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:36:00 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 
 /*
 ** Add a new line to a (char*)
 ** (needed because of a lack of lines in get_string_file)
 */
+
 char	*join_new_line(char *data, char *new_line)
 {
 	char	*tmp;
@@ -20,6 +33,7 @@ char	*join_new_line(char *data, char *new_line)
 /*
 ** Used ot store a string in a (char*) once it has been identify
 */
+
 char	*get_string_file(int *i_line, char **file, int *i_col)
 {
 	char	*string;
@@ -51,6 +65,7 @@ char	*get_string_file(int *i_line, char **file, int *i_col)
 /*
 **  If we found a string we identify it and store it
 */
+
 t_token	get_string(int *i_line, char **file, int *i_col)
 {
 	t_token	token;

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   write_header.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:51:45 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:51:49 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../includes/op.h"
 #include "../printf/printf.h"
@@ -11,6 +23,7 @@
 **  The prog size is defined by a precise function
 **  The comments where already stored in the parser so its just copied
 */
+
 void	write_header(int fd, t_parser parser_res)
 {
 	t_header header;

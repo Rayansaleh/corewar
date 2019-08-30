@@ -1,9 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parser.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:44:32 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:44:38 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../printf/printf.h"
 
 /*
 **  Function that manage the parsing
 */
+
 t_parser	parser(t_lexer lexer_res)
 {
 	t_parser	parser_res;

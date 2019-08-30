@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   write_param.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:52:36 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:53:12 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../includes/op.h"
 #include "../printf/printf.h"
@@ -6,6 +18,7 @@
 /*
 **  Write un case of a simple label token
 */
+
 static void	write_reg(int fd, t_token token)
 {
 	signed char		t_write_1;
@@ -17,6 +30,7 @@ static void	write_reg(int fd, t_token token)
 /*
 **  Write a direct number given the dir_size
 */
+
 static void	write_direct_number(int fd, t_token token, int dir_size_2)
 {
 	signed int		to_write_4;
@@ -39,6 +53,7 @@ static void	write_direct_number(int fd, t_token token, int dir_size_2)
 /*
 **  Write a direct label given the dir_size
 */
+
 static void	write_direct_label(int fd, t_token token, int dir_size_2, int pos)
 {
 	signed short	to_write_2;
@@ -61,6 +76,7 @@ static void	write_direct_label(int fd, t_token token, int dir_size_2, int pos)
 /*
 **  Write a indirect number given the dir_size
 */
+
 static void	write_indirect_number(int fd, t_token token)
 {
 	signed short	to_write_2;
@@ -73,6 +89,7 @@ static void	write_indirect_number(int fd, t_token token)
 /*
 **  Check the current token and call the corresponding function
 */
+
 void		write_param(int fd, t_token token, int dir_size_2, int pos)
 {
 	signed short	to_write_2;

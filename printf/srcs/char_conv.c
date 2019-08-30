@@ -6,10 +6,11 @@
 /*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/18 14:41:14 by rsaleh            #+#    #+#             */
-/*   Updated: 2018/12/22 21:04:01 by rsaleh           ###   ########.fr       */
+/*   Updated: 2019/08/31 00:49:16 by rsaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "../libft/includes/libft.h"
+
+#include "../../libft/includes/libft.h"
 #include "../printf.h"
 #include <stdio.h>
 
@@ -42,6 +43,7 @@ char	*ft_printf_itoa_base(uintmax_t nb, int base, char c)
 char	*ft_create_flag_list(char *list, char other_flag)
 {
 	int		len;
+
 	len = ft_strlen(list);
 	list[len] = other_flag;
 	list[len + 1] = '\0';
@@ -50,8 +52,8 @@ char	*ft_create_flag_list(char *list, char other_flag)
 
 int		ft_width(const char *format)
 {
-	int 	end;
-	int		ret;
+	int	end;
+	int	ret;
 
 	end = 0;
 	ret = 0;
@@ -60,9 +62,3 @@ int		ft_width(const char *format)
 	ret = ft_atoi(ft_strsub(format, 0, end));
 	return (ret);
 }
-
-/*void	ft_print_width(int width, char flag)
-{
-	
-}*/
-

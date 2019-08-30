@@ -6,12 +6,12 @@
 /*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/28 17:30:14 by rsaleh            #+#    #+#             */
-/*   Updated: 2019/01/16 17:17:28 by rsaleh           ###   ########.fr       */
+/*   Updated: 2019/08/30 23:57:01 by rsaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../printf.h"
-#include "../libft/includes/libft.h"
+#include "../../libft/includes/libft.h"
 
 void	printf_putnbr(t_printf *pf)
 {

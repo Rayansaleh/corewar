@@ -6,7 +6,7 @@
 #    By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/12/17 18:46:37 by rsaleh            #+#    #+#              #
-#    Updated: 2019/01/15 17:27:54 by rsaleh           ###   ########.fr        #
+#    Updated: 2019/08/31 00:15:49 by rsaleh           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,8 +27,8 @@ VPATH	= 	$(shell find $(SRCDIR) -type d)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@make -C libft/
-	@cd $(OBJDIR) && ar -x ../libft/libft.a && ar -rc ../$(NAME) *.o
+	@make -C ../libft/
+	@cd $(OBJDIR) && ar -x ../../libft/libft.a && ar -rc ../$(NAME) *.o
 	@ranlib $(NAME)
 	@printf "$@ has been created\n"
 
@@ -37,11 +37,11 @@ $(OBJDIR)%.o: $(SRCDIR)%.c
 	@gcc -o $@ -c $< $(CFLAGS) -I $(INCLUDE)
 
 clean:
-	@make clean -C libft/
+	@make clean -C ../libft/
 	@rm -rf $(OBJDIR)
 
 fclean: clean
-	@make fclean -C libft/
+	@make fclean -C ../libft/
 	@rm -rf $(NAME)
 
 re: fclean all

@@ -1,8 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   check_labels.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:43:47 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:44:02 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 
 /*
 **  Simply check if the label exists
 */
+
 int		check_label_if_exist(t_ast_inst *ast_inst, const char *to_find)
 {
 	int	i;
@@ -23,6 +36,7 @@ int		check_label_if_exist(t_ast_inst *ast_inst, const char *to_find)
 **  Check if a label has been declare as a token
 **  And if it has been declared
 */
+
 int		check_labels_params(t_parser parser_res,
 							t_ast_inst *ast_inst, char **file)
 {
@@ -51,6 +65,7 @@ int		check_labels_params(t_parser parser_res,
 /*
 **  Check if same label appear twice
 */
+
 int		check_inst_label_dec(t_ast_inst *ast_inst, char **file)
 {
 	int		i;
@@ -81,6 +96,7 @@ int		check_inst_label_dec(t_ast_inst *ast_inst, char **file)
 /*
 **  Check if there is two label for the same instruction
 */
+
 int		check_labels_dec(t_parser parser_res, t_ast_inst *ast_inst, char **file)
 {
 	int	i;

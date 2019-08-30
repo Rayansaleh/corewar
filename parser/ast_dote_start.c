@@ -1,8 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ast_dote_start.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:40:35 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:40:44 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 
 /*
 **  Print a custom error message
 */
+
 static void	print_and_set_error(t_parser *parser_res, t_lexer *lexer_res,
 								int *i, char *msg)
 {
@@ -16,6 +29,7 @@ static void	print_and_set_error(t_parser *parser_res, t_lexer *lexer_res,
 /*
 **  Detect different error that can occur after a dote
 */
+
 void		ast_add_dote_start(t_parser *parser_res, t_lexer lexer_res, int *i)
 {
 	char	*error_msg;

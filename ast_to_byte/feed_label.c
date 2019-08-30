@@ -1,9 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   feed_label.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:50:30 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:50:42 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../printf/printf.h"
 
 /*
 **  Sets all labels positions to 0
 */
+
 void	inst_feed_label_dec(t_ast_inst *ast_inst, int pos)
 {
 	int i;
@@ -23,6 +36,7 @@ void	inst_feed_label_dec(t_ast_inst *ast_inst, int pos)
 **  Compare labels stored in the structure and the current one
 **  to know its position
 */
+
 int		find_label_pos(t_ast_inst *ast_inst, char *label)
 {
 	int i;
@@ -45,6 +59,7 @@ int		find_label_pos(t_ast_inst *ast_inst, char *label)
 /*
 **  Store find and store label position
 */
+
 void	token_label_feed_pos(t_parser parser_res, t_token *token)
 {
 	int pose;
@@ -56,6 +71,7 @@ void	token_label_feed_pos(t_parser parser_res, t_token *token)
 /*
 **  If there is label we call a function find its position
 */
+
 void	inst_feed_label(t_parser parser_res, t_ast_inst *ast_inst)
 {
 	int i;

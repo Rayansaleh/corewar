@@ -1,9 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   line_to_token.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/31 00:36:09 by rsaleh            #+#    #+#             */
+/*   Updated: 2019/08/31 00:36:27 by rsaleh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/asm.h"
 #include "../includes/op.h"
 
 /*
 **  Just complete get_token_aux because of a lack of lines
 */
+
 static t_token	get_token_aux2(int *il, char **f, int *ic)
 {
 	t_token	token;
@@ -26,6 +39,7 @@ static t_token	get_token_aux2(int *il, char **f, int *ic)
 **  List of if that check each possible case to know
 **  which token we are dealing with
 */
+
 static t_token	get_token_aux(int *il, char **f, int *ic)
 {
 	if (f[*il][*ic] == ',')
@@ -46,6 +60,7 @@ static t_token	get_token_aux(int *il, char **f, int *ic)
 /*
 **  Check the line to see what kind of token is on it
 */
+
 t_token			get_token(int *i_line, char **file, int *i_col)
 {
 	t_token	token;
@@ -68,6 +83,7 @@ t_token			get_token(int *i_line, char **file, int *i_col)
 /*
 **  Divide a line into tokens
 */
+
 void			line_to_token(t_token *ltken, char **file, int *i_line)
 {
 	int		i_tken;
