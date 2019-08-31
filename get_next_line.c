@@ -6,7 +6,7 @@
 /*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/31 00:39:26 by rsaleh            #+#    #+#             */
-/*   Updated: 2019/08/31 00:39:28 by rsaleh           ###   ########.fr       */
+/*   Updated: 2019/08/31 02:16:38 by rsaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,23 @@
 #include <fcntl.h>
 #include "stdio.h"
 #include <limits.h>
+
+static char	*ft_dup(const char *src)
+{
+	char	*str;
+	int		i;
+
+	i = 0;
+	if (!(str = (char*)malloc(sizeof(char) * (ft_strlen(src)))))
+		return (NULL);
+	while (src[i])
+	{
+		str[i] = src[i];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
+}
 
 static int	get_line(int const fd, char *buffer, char *save[fd])
 {
@@ -55,11 +72,11 @@ int			get_next_line(int const fd, char **line)
 	{
 		*line = ft_strsub(save[fd], 0, str - save[fd]);
 		tmp = save[fd];
-		save[fd] = ft_strdup(str + 1);
+		save[fd] = ft_dup(str + 1);
 		ft_strdel(&tmp);
 		return (1);
 	}
-	*line = ft_strdup(save[fd]);
+	*line = ft_dup(save[fd]);
 	save[fd] = NULL;
 	return (ft_strlen(*line) > 0 ? 1 : 0);
 }
