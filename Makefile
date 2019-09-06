@@ -169,7 +169,7 @@ ACTUAL	=	1
 # **************************************************************************** #
 
 CC		=	clang
-CFLAGS	=	-Wall -Wextra -Werror -MMD
+CFLAGS	=	-g3 -Wall -Wextra -Werror -MMD
 ECHO	=	echo "$(CE_CLEAR)"
 MKDIR	=	mkdir -p
 RM		=	rm -f

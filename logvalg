@@ -1,0 +1,307 @@
+==83337== Memcheck, a memory error detector
+==83337== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==83337== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==83337== Command: ./asm ../mbarthecore/champs/add.s
+==83337== Parent PID: 97856
+==83337== 
+==83337== Invalid write of size 1
+==83337==    at 0x1000038D6: ft_dup (get_next_line.c:33)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337==  Address 0x100b80ea4 is 0 bytes after a block of size 4,084 alloc'd
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== Invalid read of size 1
+==83337==    at 0x100000AE7: ft_strlen (in ./asm)
+==83337==    by 0x100001369: ft_strjoin (in ./asm)
+==83337==    by 0x100003800: get_line (get_next_line.c:48)
+==83337==    by 0x100003661: get_next_line (get_next_line.c:70)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337==  Address 0x100b80ea4 is 0 bytes after a block of size 4,084 alloc'd
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== Invalid read of size 1
+==83337==    at 0x1000013AE: ft_strjoin (in ./asm)
+==83337==    by 0x100003800: get_line (get_next_line.c:48)
+==83337==    by 0x100003661: get_next_line (get_next_line.c:70)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337==  Address 0x100b80ea4 is 0 bytes after a block of size 4,084 alloc'd
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== Invalid read of size 1
+==83337==    at 0x100000AE7: ft_strlen (in ./asm)
+==83337==    by 0x10000386B: ft_dup (get_next_line.c:26)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337==  Address 0x100cbfd79 is 0 bytes after a block of size 66,601 alloc'd
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== Invalid read of size 1
+==83337==    at 0x1000038A0: ft_dup (get_next_line.c:28)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337==  Address 0x100cbfd79 is 0 bytes after a block of size 66,601 alloc'd
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== Invalid read of size 1
+==83337==    at 0x100000C23: ft_strchr (in ./asm)
+==83337==    by 0x100003692: get_next_line (get_next_line.c:72)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337==  Address 0x100d27e80 is 0 bytes after a block of size 0 alloc'd
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== Invalid read of size 1
+==83337==    at 0x100000C3F: ft_strchr (in ./asm)
+==83337==    by 0x100003692: get_next_line (get_next_line.c:72)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337==  Address 0x100d27e80 is 0 bytes after a block of size 0 alloc'd
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== Invalid read of size 1
+==83337==    at 0x100000C70: ft_strchr (in ./asm)
+==83337==    by 0x100003692: get_next_line (get_next_line.c:72)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337==  Address 0x100d27e80 is 0 bytes after a block of size 0 alloc'd
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== Invalid read of size 1
+==83337==    at 0x100000AE7: ft_strlen (in ./asm)
+==83337==    by 0x10000386B: ft_dup (get_next_line.c:26)
+==83337==    by 0x10000372A: get_next_line (get_next_line.c:80)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337==  Address 0x100d27e80 is 0 bytes after a block of size 0 alloc'd
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== Invalid read of size 1
+==83337==    at 0x1000038A0: ft_dup (get_next_line.c:28)
+==83337==    by 0x10000372A: get_next_line (get_next_line.c:80)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337==  Address 0x100d27e80 is 0 bytes after a block of size 0 alloc'd
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== Invalid write of size 1
+==83337==    at 0x1000038D6: ft_dup (get_next_line.c:33)
+==83337==    by 0x10000372A: get_next_line (get_next_line.c:80)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337==  Address 0x100d5c360 is 0 bytes after a block of size 0 alloc'd
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x10000372A: get_next_line (get_next_line.c:80)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== Invalid read of size 1
+==83337==    at 0x100000AE7: ft_strlen (in ./asm)
+==83337==    by 0x100003750: get_next_line (get_next_line.c:82)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337==  Address 0x100d5c360 is 0 bytes after a block of size 0 alloc'd
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x10000372A: get_next_line (get_next_line.c:80)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== 
+==83337== HEAP SUMMARY:
+==83337==     in use at exit: 22,261 bytes in 165 blocks
+==83337==   total heap usage: 49,391 allocs, 49,226 frees, 161,379,960 bytes allocated
+==83337== 
+==83337== 0 bytes in 1 blocks are definitely lost in loss record 1 of 45
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x1000036F2: get_next_line (get_next_line.c:76)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== 0 bytes in 1 blocks are definitely lost in loss record 2 of 45
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x100003877: ft_dup (get_next_line.c:26)
+==83337==    by 0x10000372A: get_next_line (get_next_line.c:80)
+==83337==    by 0x10000441D: feed_lexer_files (lexer.c:31)
+==83337==    by 0x100004557: lexer (lexer.c:90)
+==83337==    by 0x10000326A: main (main.c:28)
+==83337== 
+==83337== 24 bytes in 1 blocks are still reachable in loss record 5 of 45
+==83337==    at 0x1000B9896: malloc_zone_malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x1005D5887: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D5859: NXCreateMapTable (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D432D: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D402E: sel_init (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D39B5: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005E6D6A: map_images (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x10002803B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==83337==    by 0x100028255: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==83337==    by 0x10022100A: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==83337==    by 0x1005D3072: _objc_init (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1001B468D: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+==83337== 
+==83337== 32 bytes in 1 blocks are still reachable in loss record 10 of 45
+==83337==    at 0x1000B9896: malloc_zone_malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x1005D5A24: NXCreateHashTableFromZone (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D59F4: NXCreateHashTable (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D58CE: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D5859: NXCreateMapTable (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D432D: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D402E: sel_init (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D39B5: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005E6D6A: map_images (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x10002803B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==83337==    by 0x100028255: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==83337==    by 0x10022100A: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==83337== 
+==83337== 32 bytes in 1 blocks are still reachable in loss record 11 of 45
+==83337==    at 0x1000B9896: malloc_zone_malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x1005D5A45: NXCreateHashTableFromZone (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D59F4: NXCreateHashTable (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D58CE: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D5859: NXCreateMapTable (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D432D: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D402E: sel_init (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D39B5: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005E6D6A: map_images (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x10002803B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==83337==    by 0x100028255: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==83337==    by 0x10022100A: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==83337== 
+==83337== 32 bytes in 1 blocks are still reachable in loss record 12 of 45
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x1005D5B09: NXCreateHashTableFromZone (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D59F4: NXCreateHashTable (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D58CE: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D5859: NXCreateMapTable (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D432D: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D402E: sel_init (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D39B5: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005E6D6A: map_images (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x10002803B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==83337==    by 0x100028255: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==83337==    by 0x10022100A: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==83337== 
+==83337== 32 bytes in 1 blocks are still reachable in loss record 13 of 45
+==83337==    at 0x1000B9616: malloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x1005D5934: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D5859: NXCreateMapTable (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D432D: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D402E: sel_init (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D39B5: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005E6D6A: map_images (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x10002803B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==83337==    by 0x100028255: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==83337==    by 0x10022100A: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==83337==    by 0x1005D3072: _objc_init (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1001B468D: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+==83337== 
+==83337== 48 bytes in 1 blocks are still reachable in loss record 17 of 45
+==83337==    at 0x1000B9E45: malloc_zone_calloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x1005D5EDB: _NXHashRehashToCapacity (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D5E65: NXHashInsert (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D5B33: NXCreateHashTableFromZone (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D59F4: NXCreateHashTable (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D58CE: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D5859: NXCreateMapTable (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D432D: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D402E: sel_init (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005D39B5: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005E6D6A: map_images (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x10002803B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==83337== 
+==83337== 72 bytes in 3 blocks are possibly lost in loss record 28 of 45
+==83337==    at 0x1000B9C82: calloc (in /Users/rsaleh/.brew/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==83337==    by 0x1005D3832: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1005E6D6A: map_images (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x10002803B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==83337==    by 0x100028255: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==83337==    by 0x10022100A: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==83337==    by 0x1005D3072: _objc_init (in /usr/lib/libobjc.A.dylib)
+==83337==    by 0x1001B468D: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+==83337==    by 0x1001B463A: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+==83337==    by 0x1000C89D5: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+==83337==    by 0x100038A1A: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==83337==    by 0x100038C1D: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==83337== 
+==83337== LEAK SUMMARY:
+==83337==    definitely lost: 0 bytes in 2 blocks
+==83337==    indirectly lost: 0 bytes in 0 blocks
+==83337==      possibly lost: 72 bytes in 3 blocks
+==83337==    still reachable: 200 bytes in 6 blocks
+==83337==         suppressed: 21,989 bytes in 154 blocks
+==83337== 
+==83337== For counts of detected and suppressed errors, rerun with: -v
+==83337== ERROR SUMMARY: 12305 errors from 15 contexts (suppressed: 12 from 12)

@@ -6,11 +6,12 @@
 /*   By: rsaleh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/31 00:39:26 by rsaleh            #+#    #+#             */
-/*   Updated: 2019/08/31 02:16:38 by rsaleh           ###   ########.fr       */
+/*   Updated: 2019/09/05 21:35:39 by rsaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft/includes/libft.h"
+#include "printf/printf.h"
 #include <sys/stat.h>
 #include <fcntl.h>
 #include "stdio.h"
@@ -22,7 +23,7 @@ static char	*ft_dup(const char *src)
 	int		i;
 
 	i = 0;
-	if (!(str = (char*)malloc(sizeof(char) * (ft_strlen(src)))))
+	if (!(str = (char*)malloc(sizeof(char) * (ft_strlen(src) + 1))))
 		return (NULL);
 	while (src[i])
 	{
